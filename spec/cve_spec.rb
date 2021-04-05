@@ -133,6 +133,12 @@ describe 'CVE yml file' do
             expect(vuln['ipc']['answer']).to be(true).or(be(false))
           end
         end
+        
+        it 'not leave upvotes blank' do
+          if at_curation_level?(vuln, 1)
+            expect(vuln['upvotes'].to_s).not_be be_empty
+          end
+        end
       end
     end
   end

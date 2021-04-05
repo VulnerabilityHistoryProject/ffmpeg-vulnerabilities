@@ -136,7 +136,7 @@ describe 'CVE yml file' do
         
         it 'not leave upvotes blank' do
           if at_curation_level?(vuln, 1)
-            expect(vuln['upvotes'].to_s).not_be be_empty
+            expect(vuln['upvotes'].to_s).not_to be_empty
           end
         end
       end

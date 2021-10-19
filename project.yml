@@ -1,6 +1,6 @@
 name: FFmpeg
 fullname: FFmpeg
-subdomain: FFmpeg
+subdomain: ffmpeg
 bg_color: '#449D44'
 project_url: https://ffmpeg.org/
 description: |
